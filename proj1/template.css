@@ -1,0 +1,45 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.splash-page {
+  display:flex;
+  flex-direction: column;
+  background-color: green;
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  background-color: yellow;
+  height: 100px; 
+
+}
+
+.logo {
+  display: flex;
+  flex-grow: 3;
+  align-items: center;
+  justify-content: center;
+  background-color: pink;
+  height:100%;
+}
+
+.nav {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: space-between;
+    background-color: blue;
+    height:100%;
+  }
+  
+  /* For the aesthetics */
+  .nav-button {
+
+  }
+
+  .about-page {
+    display: flex;
+    background-color: whitesmoke;
+    
+  }
