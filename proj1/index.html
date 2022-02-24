@@ -11,37 +11,129 @@
     <link rel="stylesheet" href="./template.css">
     <title>Your Personal Website: Template 1</title>
 </head>
-<body style="margin: 0;">
+<body style="margin: 0;background-color:whitesmoke;">
     <div class="splash-page">
         <div class="navbar">
-            <div class="logo">logo</div>
+            <div class="logo"></div>
             <div class="nav">
-                <div class="nav-button">
-                    <button>
-                        <a href="#about_tag">About</a>
-                    </button>
-                </div>
-                <div class="nav-button">Portfolio</div>
-                <div class="nav-button">Contact</div>
+               
+                <button class="nav-button">
+                    <a href="#about_tag">About</a>
+                </button>
+           
+                <button class="nav-button">
+                    <a href="#portfolio_tag">Portfolio</a>
+                </button>
+               
+                <button class="nav-button">
+                    <a href="#contact_tag">Contact</a>
+                </button>
+                
             </div>
         </div>
-        <div class="headline">shieiet</div>
+        <div class="headline-div">
+            <div class="headline">
+                <img style = "border-radius: 50%; width: 250px; height: 250px; border: black;" src="./pfp.jpg" alt="PFP">
+                <h1> Richard Mao</h1>
+                <h3> Software Developer | EECS Major @ UC Berkeley</h3>
+            </div>
+            <div class="overlay-box"></div>
+        </div>       
     </div>
+  
+    <a id="about_tag"> 
+        <div class="about-page">
+            <h1 style="justify-self: center">
+                A b o u t
+            </h1>
+            <p> Hi, I am richard mao, a Senior EECS undergrad at UC berkeley. 
+                A lot of my current experience in computer science is related to 
+                software engineering and particularly with machine learning. 
+                I have done ML research among different labs at UC berkeley, 
+                including Berkeley AI Research and RISE Lab, worked on and led two
+                different ML projects with industry companies, and completed internships
+                around machine learning engineering with Qualcomm and Percipient.ai. My interests 
+                aren’t just strictly ML though, as I really enjoy the engineering process
+                like deploying models and full stack development. I enjoy dancing in my free time.<p>
+        </div>
+    </a>
 
-    <div class="about-page">
-        <a id="about_tag"> 
-            <h3>
-                About Page
-            </h3>
-        </a>
-    </div>
-    <div class="portfolio">
-        <div class="proj-col">
-            <div class="proj-name"></div>
+    <div style="width:100%;height:25px"></div>
+
+    <a id="portfolio_tag"> 
+        <div class="portfolio">
+            <div class="proj-container" style="background-color: white; border-radius: 10px; justify-content: center; align-content: center;">
+                <img class="container-img" src="./proj.webp">
+                <h1 style="position: absolute; font-size:90px; font-weight: bolder;"> P r o j e c t s</h1>
+            </div>
+            <div class="proj-container">
+                <div class="proj-img">
+                    <img src="./qc.png">
+                </div>
+                <div class="proj-col">
+                    <div class="proj-name">
+                        <h3> Thermal Classification </h3>
+                    </div>
+                    <div class="proj-desc">
+                        <ul>
+                            <li>Automated an ML pipeline for the ESGDA thermal team using python and Jenkins for RNN models that achieved under 0.5 degrees RMSE.</li>
+                            <li>Developed a solution for automatically starting and stopping modles to save CPU cycles through multivariable optimization. </li>
+                            <li>Performed feature engineering and trained XGBoost Trees and Neural Networks to classify 5G devices with 0.75 F1 score.</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+             <div class="proj-container">
+                <div class="proj-img">
+                    <img src="./mlab.png">
+                </div>
+                <div class="proj-col">
+                    <div class="proj-name"> 
+                        <h3> Audio Deepfake Detector </h3>
+                    </div>
+                    <div class="proj-desc">
+                        <ul>
+                            <li>Project Leader for Industry Consulting Project with FakeNetAI on deepfake audio detection.</li>
+                            <li>Devised new ResNet-LSTM models to classify audio segments from multiple datasets with an average of 0.9 F1 score for FakeNetAI’s audio deepfake detector.</li>
+                            <li>Deployed model on to a web server with AWS and streamlit backend.</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="proj-container">
+                <div class="proj-img">
+                    <img style="width:91%;" src="./bair.png" >
+                </div>
+                <div class="proj-col">
+                    <div class="proj-name">
+                        <h3> Self-Supervised Pretraining </h3>
+                    </div>
+                    <div class="proj-desc">
+                        <ul>
+                            <li>Analyzed representational similarity divergence of various vision models in hierarchical pretraining strategies under Prof. Kurt Kuetzer.</li>
+                            <li>Published Self-Supervised Pretraining Improves Self-Supervised Pretraining to the WACV 2022 conference.</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
         </div>
-        <div class="proj-col">
-            <div class="proj-name"></div>
+    </a>
+
+    <a id="contact_tag"> 
+        <div class="contact"> 
+            <h1> Contact Me! </h1> 
+            <div class="contact-bar"> 
+                <p>
+                richard.mao@berkeley.edu |
+                <a href="http://www.linkedin.com/in/richard-mao"> linkedin.com/in/richard-mao </a> | 858-405-1230  
+                </p>  
+            </div>
         </div>
-    </div>
+    </a>
 </body>
 </html>
